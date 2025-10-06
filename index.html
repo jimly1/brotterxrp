@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brotter</title>
+  <link rel="icon" type="image/png" href="assets/brotter_logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">Bro<span>'tter</span></div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-links desktop-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#collection" class="scroll-link">Collection</a></li>
+        <li><a href="#about" class="scroll-link">About Us</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://x.com/brotternft" class="social-btn x" target="_blank" rel="noopener" aria-label="X">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor"
+              d="M18.244 2H21L14.354 9.56L22 22h-5.933l-4.61-7.387L6.1 22H3l7.122-8.112L2 2h6.067l4.144 6.703L18.244 2Zm-2.105 18.405h1.636L8.005 3.518H6.258l9.881 16.887Z" />
+          </svg>
+        </a>
+        <a href="https://discord.com" class="social-btn discord" target="_blank" rel="noopener" aria-label="Discord">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.317 4.369A19.791 19.791 0 0 0 16.885 3.2a.112.112 0 0 0-.12.056c-.524.927-1.11 2.13-1.527 3.084a17.978 17.978 0 0 0-5.076 0c-.418-.954-1.003-2.157-1.527-3.084a.115.115 0 0 0-.12-.056A19.736 19.736 0 0 0 3.683 4.369a.104.104 0 0 0-.047.041C.533 9.09-.32 13.58.099 18.021a.116.116 0 0 0 .045.082c2.053 1.507 4.045 2.422 5.993 3.03a.112.112 0 0 0 .123-.041c.462-.63.874-1.295 1.226-1.994a.112.112 0 0 0-.062-.155c-.652-.247-1.273-.547-1.872-.892a.112.112 0 0 1-.011-.187c.126-.095.252-.192.373-.291a.112.112 0 0 1 .114-.013c3.927 1.793 8.18 1.793 12.062 0a.112.112 0 0 1 .115.012c.122.099.247.196.373.291a.112.112 0 0 1-.01.187 12.478 12.478 0 0 1-1.873.892.112.112 0 0 0-.062.155c.36.699.772 1.364 1.226 1.994a.112.112 0 0 0 .123.041c1.948-.608 3.94-1.523 5.993-3.03a.112.112 0 0 0 .045-.082c.5-5.177-.838-9.637-3.236-13.611a.104.104 0 0 0-.047-.041zM8.02 15.331c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.175 1.094 2.156 2.418 0 1.334-.955 2.419-2.156 2.419zm7.96 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.175 1.094 2.156 2.418 0 1.334-.946 2.419-2.156 2.419z"
+              fill="currentColor" />
+          </svg>
+        </a>
+      </div>
+
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li><a href="#" class="menu-btn primary">Home</a></li>
+          <li><a href="#collection" class="menu-btn primary scroll-link">Collection</a></li>
+          <li><a href="#about" class="menu-btn primary scroll-link">About Us</a></li>
+        </ul>
+
+        <!-- Mobile Social Links (separate from nav list) -->
+        <div class="mobile-social">
+          <a href="https://x.com" class="menu-btn secondary" target="_blank" rel="noopener" aria-label="X">
+            <svg class="icon-x" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor"
+                d="M18.244 2H21L14.354 9.56L22 22h-5.933l-4.61-7.387L6.1 22H3l7.122-8.112L2 2h6.067l4.144 6.703L18.244 2Zm-2.105 18.405h1.636L8.005 3.518H6.258l9.881 16.887Z" />
+            </svg>
+          </a>
+
+          <a href="https://discord.com" class="menu-btn secondary" target="_blank" rel="noopener" aria-label="Discord">
+            <svg class="icon-discord" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.317 4.369A19.791 19.791 0 0 0 16.885 3.2a.112.112 0 0 0-.12.056c-.524.927-1.11 2.13-1.527 3.084a17.978 17.978 0 0 0-5.076 0c-.418-.954-1.003-2.157-1.527-3.084a.115.115 0 0 0-.12-.056A19.736 19.736 0 0 0 3.683 4.369a.104.104 0 0 0-.047.041C.533 9.09-.32 13.58.099 18.021a.116.116 0 0 0 .045.082c2.053 1.507 4.045 2.422 5.993 3.03a.112.112 0 0 0 .123-.041c.462-.63.874-1.295 1.226-1.994a.112.112 0 0 0-.062-.155c-.652-.247-1.273-.547-1.872-.892a.112.112 0 0 1-.011-.187c.126-.095.252-.192.373-.291a.112.112 0 0 1 .114-.013c3.927 1.793 8.18 1.793 12.062 0a.112.112 0 0 1 .115.012c.122.099.247.196.373.291a.112.112 0 0 1-.01.187 12.478 12.478 0 0 1-1.873.892.112.112 0 0 0-.062.155c.36.699.772 1.364 1.226 1.994a.112.112 0 0 0 .123.041c1.948-.608 3.94-1.523 5.993-3.03a.112.112 0 0 0 .045-.082c.5-5.177-.838-9.637-3.236-13.611a.104.104 0 0 0-.047-.041zM8.02 15.331c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.175 1.094 2.156 2.418 0 1.334-.955 2.419-2.156 2.419zm7.96 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.175 1.094 2.156 2.418 0 1.334-.946 2.419-2.156 2.419z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+  </nav>
+
+  <section class="hero">
+    <!-- 🎥 Background Video -->
+    <video class="hero-bg" autoplay muted loop playsinline>
+      <source src="assets/brotter_bg.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay"></div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-header">
+        <h2>About Bro'tter</h2>
+        <p class="about-subtitle">Where Otters Meet Innovation</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Our Story</h3>
+          <p>Bro'tter was born from a simple idea: what if we could combine the playful spirit of otters with
+            cutting-edge blockchain technology? We believe that the future of NFTs should be fun, accessible, and
+            meaningful. Our collection features unique otter characters, each with their own personality and story to
+            tell.</p>
+
+          <h3>Our Mission</h3>
+          <p>We're building more than just digital collectibles. We're creating a community where otter enthusiasts,
+            crypto enthusiasts, and art lovers can come together. Our goal is to make the NFT space more welcoming and
+            enjoyable for everyone, one adorable otter at a time.</p>
+
+          <h3>Why Otters?</h3>
+          <p>Otters represent everything we love about the crypto community: they're social, playful, intelligent, and
+            they stick together. Just like our community, otters work in groups, support each other, and always find
+            time for fun. Plus, who can resist those cute whiskers?</p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">220</div>
+            <div class="stat-label">Unique Otters</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">65</div>
+            <div class="stat-label">Traits & Features</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Rare Combinations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meme Carousel Section -->
+  <section id="collection" class="meme-carousel-section">
+    <div class="meme-container">
+      <h2 class="meme-title">Bro'tters Collection</h2>
+
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="assets/brotter-%2396.png" alt="Bro'tter #96">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/brotter-%2397.png" alt="Bro'tter #97">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/brotter-%2398.png" alt="Bro'tter #98">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/brotter-%2399.png" alt="Bro'tter #99">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/brotter-%23100-(pirate).png" alt="Bro'tter #100 Pirate">
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="carousel-slide">
+            <img src="assets/brotter-%2396.png" alt="Bro'tter #96">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/brotter-%2397.png" alt="Bro'tter #97">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/brotter-%2398.png" alt="Bro'tter #98">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/brotter-%2399.png" alt="Bro'tter #99">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/brotter-%23100-(pirate).png" alt="Bro'tter #100 Pirate">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span class="footer-logo">Bro<span>'tter</span></span>
+      <span class="footer-tagline">Otterly Yours, Always Bro.</span>
+      <span class="footer-copyright">&copy; 2025 Bro'tter. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
